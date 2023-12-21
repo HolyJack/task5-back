@@ -33,6 +33,7 @@ const app = (0, express_1.default)();
 const port = 3000;
 app.use((0, cors_1.default)({
     origin: ["https://task5-react-front.vercel.app", "http://localhost:5173"],
+    methods: ["GET"],
 }));
 app.use(express_1.default.json());
 app.get("/api/users", (req, res) => {
