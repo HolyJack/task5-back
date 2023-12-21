@@ -10,7 +10,10 @@
         {
             "src": "/(.*)",
             "dest": "/app.js",
-            "methods": ["GET"]
+            "methods": ["GET"],
+            "headers": {
+                "Access-Control-Allow-Origin": "https://task5-react-front.vercel.app"
+            }
         }
     ]
 }
