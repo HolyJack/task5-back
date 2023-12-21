@@ -8,8 +8,8 @@
     ],
     "routes": [
         {
-            "src": "/api/(.*)",
-            "dest": "/app.js",
+            "src": "/(.*)",
+            "dest": "/index.js",
             "methods": ["GET"],
             "headers": {
                 "Access-Control-Allow-Origin": "https://task5-front.vercel.app"
